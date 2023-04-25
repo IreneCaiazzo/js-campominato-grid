@@ -5,7 +5,7 @@
 }
 
 header{
-    height: 20vh;
+    height: 15vh;
 }
 
 header .container, 
@@ -33,8 +33,21 @@ footer .container{
 }
 
 main{
-    height: 70vh;
+    height: 75vh;
     background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 500px;
+	background-color: rgb(178, 152, 9);
+	border: 2px solid white;
+	/* box-sizing: content-box; */
 }
 
 footer{
