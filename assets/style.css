@@ -47,7 +47,22 @@ main{
 	height: 500px;
 	background-color: rgb(178, 152, 9);
 	border: 2px solid white;
-	/* box-sizing: content-box; */
+	box-sizing: content-box;
+}
+
+.cell {
+	width: calc(100% / 10);
+	height: calc(100% / 10);
+	border: 2px solid white;
+    color: white;
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicked {
+	background-color: aqua;
 }
 
 footer{
