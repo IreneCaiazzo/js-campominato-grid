@@ -1,4 +1,4 @@
-Consegna
+// Consegna
 // L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
 // Ogni cella ha un numero progressivo, da 1 a 100.
 // Ci saranno quindi 10 caselle per ognuna delle 10 righe.
@@ -14,3 +14,26 @@ Consegna
 // Di cosa ho bisogno per generare i numeri?
 // Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 // Le validazioni e i controlli possiamo farli anche in un secondo momento.
+
+
+
+// generare la griglia
+
+const eleGrid = document.querySelector('.grid');
+
+createGrid(100, eleGrid);
+
+function createGrid(numCells, eleContainer) {
+	for (let i = 1; i <= numCells; i++) {
+		eleContainer.innerHTML += `<div class="cell">${i}</div>`;
+
+        const cell = document.createElement('div');
+
+        cell.addEventListener('click', function() {
+			console.log(this + 'has been clicked');
+			this.classList.toggle('.clicked');
+		});
+        
+        eleContainer.append(cell);
+	}
+}
